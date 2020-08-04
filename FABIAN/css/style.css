@@ -1,0 +1,279 @@
+
+body {
+    background-color: white;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: white;
+    border-bottom: 10px solid #eceff1
+}
+
+.site-wraper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border-bottom: 10px solid #eceff1;
+}
+
+/*navbar*/
+.logo {
+    padding-top: 1em;
+    padding-left: 2em;
+    width: 800px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1e88e5;
+}
+
+.logo:hover {
+    color:#1e88e5;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+.menu {
+    padding-top: 2.5em;
+    text-align: center;
+    width: 400px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    color: #1e88e5;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 4px;
+    color: #01579b;
+    padding-right: 0.5em;
+    border-right: 1px solid grey;
+}
+
+nav .contacto a {
+    border-right: none;
+}
+
+.menu a:hover {
+    color: #01579b;
+    transition: 0.5s;
+    font-size: 1.2em;
+}
+
+/***sección weAre***/
+.weAre {
+    width: 100%;
+    margin-top: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    font-family: "Monsterrat", sans-serif;
+    text-align: center;
+    
+    
+}
+
+.weAre h2 {
+    font-size: 24px;
+    color: grey;
+}
+
+.weAre p {
+    padding-top: 0.5em;
+    font-size: 15px;
+    color: grey;
+}
+
+/***Principal***/
+
+main{
+    background-color: #42a5f5;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 0px 5px 0px #888888;
+    box-shadow: 0px 5px 0px 5px #888888;
+}
+.principal-content .menu2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-family: "Monsterrat", sans-serif;
+}
+
+.principal-content .menu2 a {
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+}
+
+.principal-content .menu2 a:hover {
+    color: #1e88e5;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: white;
+    transition: 0.3s;
+    font-size: 0.8em;
+    padding: 0.2em;
+}
+
+/***Album***/
+
+.image-collage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.container-imagen {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    width: 250px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.imagenes {
+    width: 100%;
+    filter: grayscale(10);
+    margin: 10px;
+}
+
+.imagenes:hover {
+    filter: grayscale(0);
+}
+
+.pre-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 0px;
+    background-color: #eceff1;
+}
+
+.pre-footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Monsterrat", sans-serif;
+    color: #455a64;
+}
+
+.pre-footer a:hover {
+    background-color: #009688;
+}
+
+/***formulario***/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: grey;
+}
+form{
+    border: 1px solid #1e88e5;
+    padding: 30px;
+}
+
+.contact .formText{
+    min-width: 400px;
+    height: 30px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px groove #009688;
+}
+
+.contact .TextArea{
+    min-width: 400px;
+    height: 100px;
+}
+
+.contact .boton{
+    min-width: 170px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 120px;
+    border-radius: 3px;
+    background-color: #1e88e5;
+    color: white;
+}
+
+.contact .boton:hover{
+    background-color: #01579b;
+}
+
+
+.contact p{
+    margin-top: 30px    ;
+    font-size: 20px;
+}
+
+/***footer***/
+footer{
+    order: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+/***Redes Sociales***/
+#mySidenav a {
+    position: absolute;
+    right: -0.5em;
+    transition: 0.3s;
+    padding: 0.2em;
+    width: 2.1em;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 5px 0px 0px 5px;
+    margin: 0;
+  }
+  
+  #mySidenav a:hover {
+    right: 0;
+  }
+  
+  #facebook {
+    height: 1.5em;
+    top: 260px;
+    background-color: #2196f3;
+  }
+  
+  #whatsapp {
+    height: 1.5em;
+    top: 300px;
+    background-color: #4caf50;
+  }
+  
+  #instagram {
+    height: 1.5em;
+    top: 340px;
+    background-color: #f44336;
+  }
+  
+  #twitter {
+    height: 1.5em;
+    top: 380px;
+    background-color: #1565c0;
+  }
+  
+
+ 
