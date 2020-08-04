@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Yo Adopto</title>
+  </head>
+  <body id="home-pg">
+
+     <!-- Modal -->
+  <div class="modal fade" id="contac-modal" tabindex="-1" role="dialog" aria-labelledby="contac-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contac-modal-label">Contacto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name-in">Nombre</label>
+                  <input type="text" class="form-control" id="name-in" placeholder="Ingresa tu nombre" required>
+                  <div class="valid-feedback">
+                    ¡Bien!
+                  </div>
+                  <div class="invalid-feedback">
+                    Este campo es bligatorio
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email-in">Correo electrónico</label>
+                  <input type="email" class="form-control" id="email-in" placeholder="email@example.com" required>
+                  <small id="email-help" class="form-text text-muted">No compartiremos tus datos con alguien más</small>
+                  <div class="invalid-feedback">
+                    Verificar el formato del email
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="comment-in">Asunto*</label>
+                    <textarea class="form-control" id="comment-in" rows="4" required></textarea>
+                  </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="receive-info">
+                  <label class="form-check-label" for="exampleCheck1">Quiero recibir correos informativos</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     
+    <div class="container main-container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="default-navbar">
+            <a class="navbar-brand" href="#">YO ADOPTO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-opts" 
+             aria-controls="navbar-opts" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-opts">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Incio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Adopciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hogar Temporal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Donativos</a>
+                    </li>
+                    <li class="contac-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#contac-modal">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- CAROUSEL -->
+
+        <section class="carousel-sect">
+            <div id="home-carousel" class="carousel slide" data-ride="home-carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#home-carousel" data-slide-to="1"></li>
+                  <li data-target="#home-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/carousel/perro1.jpg" class="d-block w-100" alt="perros en adopcion">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Chocó</h5>
+                      <p>Tiene 3 meses de nacido y crece hasta tamaño mediano</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/carousel/perro2.jpg" class="d-block w-100" alt="perros en adopcion">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Firulais</h5>
+                      <p>Hace parte de una camada de 5 cachorritos. Tiene tres meses de nacido.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/carousel/perro3.jpg" class="d-block w-100" alt="perros en adopcion">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Tokyo</h5>
+                      <p>Hermanito de Chocó y Firulais, es el último en nacer de la camada</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+        </section>
+
+        <!-- OPTIONS -->
+
+        <section class="options-sect">
+            <div class="options-area d-flex justify-content-around align-items-start flex-wrap">
+                <div class="opt">
+                    <p class="opt-title">Adopciones</p>
+                    <img class="opt-img" src="./img/carousel/perro6.jpg" alt="perro en adopción">
+                    <p class="opt-des">Quiero ser parte de tu familia</p>
+                    <p class="badge badge-light">4 disponibles</p>
+                    <br><button class="btn btn-orange"> Buscar </button>
+                </div>
+                <div class="opt mg-top">
+                    <p class="opt-title">Hogar Temporal</p>
+                    <img class="opt-img" src="./img/carousel/perro8.jpg" alt="hogar temporal">
+                    <p class="opt-des">¿Tienes un lugar en tu casa para mí?</p>
+                    <p class="badge badge-light">8 disponibles</p>
+                    <br><button class="btn btn-orange"> Registrarme </button>
+                </div>
+                <div class="opt mg-top">
+                    <p class="opt-title">Voluntariado</p>
+                    <img class="opt-img" src="./img/carousel/perro7.jpg" alt="Voluntariado">
+                    <p class="opt-des">Juntos la vamos a pasar muy bien</p>
+                    <p class="badge badge-light">10 espacios disponibles</p>
+                    <br><button class="btn btn-orange"> Donar </button>
+                </div>
+                <div class="opt mg-top">
+                    <p class="opt-title">Donaciones</p>
+                    <img class="opt-img" src="./img/carousel/perro4.jpg" alt="Donaciones">
+                    <p class="opt-des">Ayúdanos para seguir ayduando</p>
+                    <p class="badge badge-light">10.000</p>
+                    <br><button class="btn btn-orange"> Donar </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ADOPCIÓN -->
+
+        <section class="adoptions-sect">
+            <div class="container montly-adoptions-area">
+                <h3 class="section-title text-center">Adoptados del Mes</h3>
+                <div class="row">
+                    <div class="img-container col-12 col-md-6 col-lg-3">
+                        <figure class="figure">
+                            <img src="./img/carousel/perro1.jpg" class="figure-img img-fluid rounded" alt="adoptado este mes" data-toggle="tooltip" data-placement="bottom" title="Gracias familia Marín">
+                            <figcaption class="figure-caption"> Michin</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="img-container col-12 col-md-6 col-lg-3">
+                        <figure class="figure">
+                            <img src="./img/carousel/perro2.jpg" class="figure-img img-fluid rounded" alt="adoptado este mes" data-toggle="tooltip" data-placement="bottom" title="Gracias familia Pérez">
+                            <figcaption class="figure-caption"> Cometa </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="img-container col-12 col-md-6 col-lg-3">
+                        <figure class="figure">
+                            <img src="./img/carousel/perro4.jpg" class="figure-img img-fluid rounded" alt="adoptado este mes" data-toggle="tooltip" data-placement="bottom" title="Gracias familia Ruíz">
+                            <figcaption class="figure-caption"> Cacahuate </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="img-container col-12 col-md-6 col-lg-3">
+                        <figure class="figure">
+                            <img src="./img/carousel/perro5.jpg" class="figure-img img-fluid rounded" alt="adoptado este mes" data-toggle="tooltip" data-placement="bottom" title="Gracias familia Hernández">
+                            <figcaption class="figure-caption"> Negro Alfonso </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        (function() {
+        'use strict';
+         window.addEventListener('load', function() {
+         // Fetch all the forms we want to apply custom Bootstrap validation styles to
+         var form = document.getElementById('contact-form');
+        var validation= form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+  }, false);
+})();
+    </script>
+</body>
+</html>

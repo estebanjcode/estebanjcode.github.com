@@ -1,0 +1,150 @@
+:root {
+    --blue-navy: #05205d;
+    --blue-light: #448AFF;
+    --deep-orange: #E64A19;
+    --green-coral: #4CAF50;
+    --white-egg: #F5F5F5;
+    --shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
+    --shadow-box: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+#home-pg {
+    background-color: var(--white-egg);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#default-navbar {
+    background-color: var(--blue-light);
+    box-shadow: var(--shadow);
+    border-radius: 2px;
+}
+
+#default-navbar .navbar-brand {
+    color: var(--white-egg);
+    font-size: 35px;
+    padding: 5px;
+    box-shadow: var(--shadow-box);
+    border-radius: 4px;
+    background-color: var(--blue-light);
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#default-navbar .nav-link {
+    color: white;
+    border-right: 1px solid white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 17px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#default-navbar .contac-item .nav-link {
+    border-right: none;
+}
+
+#home-carousel .carousel-item {
+    height: 450px;
+
+}
+
+#home-carousel .carousel-caption > h5 {
+    font-size: 2rem;
+    color: black;
+}
+
+#home-carousel .carousel-caption > p {
+    font-size: 1.25rem;
+    color: black;
+}
+
+.options-sect {
+    background-color: var(--green-coral);
+    padding-left: 12px;
+    padding-right: 12px;
+    box-shadow: var(--shadow-box);
+}
+
+.options-area {
+    height: inherit;
+    padding: 20px 0;
+}
+
+.options-area .opt {
+    text-align: center;
+    color: var(--white-egg);
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 300px;
+} 
+
+.options-area .opt .opt-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.options-area .opt .opt-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.options-area .opt .opt-des {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.options-area .opt.mg-top {
+    margin-top: 30px;
+    border-bottom: 1px solid var(--white-egg);
+}
+
+.btn-orange {
+    background-color: var(--deep-orange);
+    color: var(--white-egg);
+    margin-bottom: 10px;
+}
+
+/*** ADOPCIÓN***/
+
+.adoptions-sect {
+    background-color: var(--white-egg);
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--blue-navy);
+    margin-bottom: 28px;
+    margin-top: 12px;
+}
+
+.montly-adoptions-area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.img-container figure > img {
+    max-height: 185px;
+}
+
+.img-container figure > .figure-caption {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--blue-navy);
+}
+
+
+#header {
+    height: 5em;
+}
